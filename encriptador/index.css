@@ -5,41 +5,77 @@
 body{
     margin: 0px;
     padding: 0px;
-    background: #f3f5fc;
+    background-color: #FFFFFF;
+
 }
 .container{
     margin: auto;
     width: 980px;
     height: 650px;
     padding:  5px;
-    background: blue;
+    background: #f3f5fc;
+
+
 }
 .logo{
     width: 100%;
     float: left;
-    background: rgb(255, 34, 0);
+    background: #f3f5fc;
+
+
 
 }
-.left{
+#left{
     float: left;
-    width: 70%;
-    height: 70%;
+    width: 650px;
+    height: 450px;
     border-radius: 24px;
-    background: yellow;
+    background: #f3f5fc;
+
+
 }
-.right{
+#right{
     width: 30%;
     height: auto;
     float: right;
     border-radius: 24px;
-    background: orange;
+    background-color: #FFFFFF;
+   
+
+
+}
+#tarea{
+    float: left;
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 80%;
+    height: 80%;
+    color: #0a3871;
+    font-size: 20px;
+    border:none;
+    outline: none;
+    background-color: #FFFFFF;
+
 }
 .left-button{
     float: left;
-    width: 70%;
+    width: 66.5%;
     height: auto;
     border-radius: 20px;
-    background: pink;
+    background: #f3f5fc;
+
+
+
+}
+.right-button{
+    float: right;
+    width: 30%;
+    height: 80%;
+    border-radius: 20px;
+    background: #f3f5fc;
+
+
+
 }
 .logoimg{
     margin-top: 1%;
@@ -51,7 +87,7 @@ body{
     margin-left: 15%;
     float: inherit;
 }
-.text-input{
+#text-input{
     float: left;
     margin-left: 10%;
     margin-top: 10%;
@@ -62,6 +98,7 @@ body{
     border:none;
     outline: none;
     background: #f3f5fc;
+
 
 }
 #imgDerechar{
@@ -93,19 +130,56 @@ body{
     height: 60%;
     border-radius: 24px;
     margin-left: 15%;
+    background: #0A3871;
+  
 
-background: #0a3871;
 
 
 }
 #btn-desencriptar{
     
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color:#0A3871;
     padding: 24px; 
     width: 30%;
     height: 60%;
-    border-radius: 24px;
+    
     margin-left: 15%;
-    background: #d8dfe8;
+    background-color: #FFFFFF;
+
+
+}
+
+#btn-copiar{
+    
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color:#0A3871;
+    padding: 24px; 
+    width:80%;
+    height: 60%;
+    margin-top: 52.5px;
+    margin-left: 10%;
+    background-color: #FFFFFF;
+
+
+}
+#p{
+    margin-left: 15%;
+}
+#resultado{
+    float: left;
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 80%;
+    height: 80%;
+    color: #0a3871;
+    font-size: 20px;
+    border:none;
+    outline: none;
+    background: #f3f5fc;
+    position: center;
 
 }
 /* #main{

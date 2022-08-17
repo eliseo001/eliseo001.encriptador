@@ -1,10 +1,18 @@
-const textoIngresado = document.getElementById('textoIngresado');
-const encriptar = document.getElementById('botonEncriptar');
-const desencriptar = document.getElementById('buttonDesencriptar');
-const t = document.getElementById('Texto');
+const textoIngresado = document.getElementById('text-input');
+const encriptar = document.getElementById('btn-encriptar');
+const desencriptar = document.getElementById('btn-desencriptar');
+// const t = document.getElementById('Texto');
+
+const resultado = document.getElementById('resultado');
+
+const fin = resultado;
+
+const tarea = document.getElementById('tarea');
+
+
 
 // const copiarAlPortapapeles= document.getElementById('copiarAlPortapapeles');
-const div2 = document.getElementById('div2');
+const right = document.getElementById('right');
 
 
 function alertarValor(){
@@ -31,36 +39,39 @@ function desencriptarValor (valor){
 }
 
 encriptar.addEventListener('click', function(){
-    var t = document.createElement('Texto');
     
+    var t = document.createElement('Texto');
+   
 
     t.innerHTML = encriptarValor(textoIngresado.value);
     
 
     
-    div2.appendChild(t);
+    resultado.appendChild(t);
+   
    
 });
 
 desencriptar.addEventListener('click', function(){
 
-    var textoDesencriptado = document.createElement('h1');
+    var t = document.createElement('Texto');
 
-    textoDesencriptado.innerHTML = desencriptarValor(textoIngresado.value)
+    t.innerHTML = desencriptarValor(textoIngresado.value)
 
     
-    div2.appendChild(textoDesencriptado);
+    resultado.appendChild(t);
     
 });
 
 function copyToClipBoard() {
 
-    var content = document.getElementById('Texto');
+    
+    var content = document.getElementById('resultado');
     
     content.select();
     document.execCommand('copy');
 
-    alert("Copied!");
+   
 }
 
 

@@ -20,33 +20,51 @@
             <h1>aca va el panel derecho</h1>
             <div class="right">
             </div> -->
-                <main id="main">
+               
                     
+                <div>
+                        <div class="logo">
+                            <img class="logoimg" src="../imagenes/Logo.jpg" >
+                            <h1 class="title">encriptador de mensajes</h1>
+                        </div>
+
+                    
+
+                         <div id="left">
+                             <input id="text-input" type="text" placeholder="ingrese el texto aqui">
+                        
+                         </div>
+
+
+                            <div id="right"> <img id="imgDerechar" src="../imagenes/Muñeco.png.svg" alt="">
+
+
+                                <h2 id="resultado">Ningun mensaje fue encontrado</h2>
+                                
+                                <!-- <textarea id="tarea"  type="text" placeholder="Ningun mensaje fue encontrado"> </textarea> -->
+
+                                <!-- <button id="copiar" onclick="copyToClipBoard()">Copy</button> -->
+                            <!-- <p id="Texto">texto Encriptado</p> -->
+                             </div >
+
+                            <div  class="left-button">
+                                <p id="p"><img src="../imagenes/Vector.png"> minusculas y sin acento</p>
+                                <button type="button" id="btn-encriptar">encriptar</button>
+                                <button type="button" id="btn-desencriptar">desencriptar</button>
                 
-                    <div id="div1">
-                        <div>
-                        <input id="textoIngresado">
-
-                        <a id="a">Solo letras minuscuals y sin acentos</a>
-
-                        <button id="botonEncriptar">Encriptar</button>
-                    
-                        <button id="buttonDesencriptar">Desencriptar</button>
-                    </div>
-                    </div>
-                        <div id="div2"> 
+                            </div>
+                            <div  class="right-button">
+                                <button id="btn-copiar" onclick="copyToClipBoard()">Copy</button>
+                
+                            </div>
                             
-                        <p id="Texto">texto Encriptado</p>
-                        
-
-                        
-                        <button onclick="copyToClipBoard()">Copy</button>
-                               
-                    </div >
+                            
+                                
+                  
                 
-       
+                </div>
         
-        </main>
+      
     </div>
         <script src="./index.js"></script>
     </body>
