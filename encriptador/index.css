@@ -13,7 +13,7 @@ body{
 
 }
 .todo{
-    background-image: url(../imagenes/encripta.jpg);
+    background-image: url(./imagenes/encripta.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
