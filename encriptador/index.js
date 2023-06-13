@@ -39,37 +39,59 @@ function desencriptarValor (valor){
 }
 
 encriptar.addEventListener('click', function(){
-    
-    var t = document.createElement('Texto');
+    var nuevo_texto = encriptarValor(textoIngresado.value);
    
+    // Eliminar el texto anterior
+    while (resultado.firstChild) {
+        resultado.removeChild(resultado.firstChild);
+    }
 
-    t.innerHTML = encriptarValor(textoIngresado.value);
+    // Crear un nuevo elemento de texto y asignarle el valor encriptado
+    var t = document.createElement('Texto');
+    t.innerHTML = nuevo_texto;
     
-
-    
+    // Agregar el nuevo elemento de texto al resultado
     resultado.appendChild(t);
    
+    // Actualizar la variable global con el nuevo texto
+    texto_global = nuevo_texto;
+    // copyToClipBoard(t);
    
 });
 
 desencriptar.addEventListener('click', function(){
-
+    var nuevo_texto = desencriptarValor(textoIngresado.value);
+    while (resultado.firstChild) {
+        resultado.removeChild(resultado.firstChild);
+    }
     var t = document.createElement('Texto');
-
+    
     t.innerHTML = desencriptarValor(textoIngresado.value)
 
-    
     resultado.appendChild(t);
-    
+   
+    // Actualizar la variable global con el nuevo texto
+    texto_global = nuevo_texto;
+    // copyToClipBoard(t);
 });
 
 function copyToClipBoard() {
-
-    
     var content = document.getElementById('resultado');
-    
-    content.select();
+
+    // Crear un elemento de texto temporal
+    var tempElement = document.createElement('textarea');
+    tempElement.value = content.innerText;
+    document.body.appendChild(tempElement);
+
+    // Seleccionar y copiar el contenido del elemento temporal
+    tempElement.select();
     document.execCommand('copy');
+    document.body.removeChild(tempElement);
+    
+    // var content = document.getElementById('resultado');
+    
+    // content.select();
+    // document.execCommand('copy');
 
    
 }
